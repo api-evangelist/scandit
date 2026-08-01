@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/ (SDK release notes) + https://github.com/Scandit
+versioning:
+  scheme: semver
+  current_major: v7
+  docs: https://docs.scandit.com/
+  note: >-
+    The Data Capture SDK is versioned with semantic versioning; the current major
+    line is v7 (MatrixScan Batch supersedes the v6 BarcodeTracking API). SDK
+    modules are released together per platform across npm, Maven Central, CocoaPods,
+    NuGet and pub.dev.
+deprecation:
+  policy_url: https://docs.scandit.com/
+  note: >-
+    Products are renamed/merged/deprecated across major versions (e.g. Text Capture
+    removed; BarcodeTracking -> MatrixScan Batch in v7). Migration guidance is
+    published in the release notes rather than via HTTP Sunset/Deprecation headers
+    (no REST API surface).
+release_notes:
+  - product: Data Capture SDK
+    url: https://docs.scandit.com/
+  - product: ID Bolt (hosted)
+    url: https://docs.scandit.com/docs/hosted/id-bolt/release-notes
+status_page: null
+sla: null
+deprecated_operations: []

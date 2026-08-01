@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/ (SDK licensing / getting-started)
+docs: https://docs.scandit.com/
+summary:
+  types: [licenseKey]
+  api_key_in: [sdk-configuration]
+  oauth2_flows: []
+note: >-
+  Scandit does not expose a REST API secured by OAuth or API keys. Authentication
+  is a per-application LICENSE KEY provisioned from the Scandit dashboard and
+  supplied to the Data Capture SDK at initialization (e.g. DataCaptureContext /
+  ScanditLicense). Keys are scoped to an app bundle id / package name / web origin
+  and gate which products (Barcode, MatrixScan, ID, Smart Label, Parser) are
+  enabled. There are no OAuth scopes.
+schemes:
+  - name: licenseKey
+    type: license-key
+    location: sdk-initialization
+    provisioning: https://ssl.scandit.com/dashboard/
+    scope: application (bundle id / package name / web origin)
+    gates: [barcode, matrixscan, id, smart-label, parser, text]
+  - name: idBoltClientKey
+    type: license-key
+    product: ID Bolt (hosted)
+    note: ID Bolt sessions are configured with a Scandit license key passed to IdBoltSession.

@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/
+note: >-
+  Scandit ships pre-built, embeddable capture UI components layered on top of the
+  Data Capture SDK. These are client-side UI surfaces distinct from the low-level
+  SDK modules in packages/.
+families:
+  - name: SparkScan
+    kind: prebuilt-scanning-ui
+    description: Floating, ready-to-use single-barcode scanning button/overlay that drops into any screen with minimal configuration.
+    frameworks: [ios, android, web, react-native, flutter, cordova, capacitor, maui]
+  - name: MatrixScan AR
+    kind: augmented-reality-overlay
+    description: Renders AR highlights, annotations and interactive overlays on multiple barcodes in the live camera view.
+    frameworks: [ios, android, web, react-native, flutter, cordova, capacitor, maui]
+  - name: MatrixScan Count
+    kind: prebuilt-workflow-ui
+    description: Complete counting UI for scanning many items quickly.
+    frameworks: [ios, android, web, react-native, flutter, cordova, capacitor, maui]
+  - name: ID Bolt
+    kind: hosted-dropin
+    description: >-
+      Cloud-hosted, drop-in ID-scanning pop-up for websites with built-in phone
+      handover; loaded via the @scandit/web-id-bolt web package. No camera UI to
+      build.
+    frameworks: [web]
+    loader: "@scandit/web-id-bolt"
+  - name: DataCaptureView
+    kind: camera-view
+    description: The base rendering view that hosts the camera preview and capture overlays for all custom integrations.
+    frameworks: [ios, android, web, react-native, flutter, cordova, capacitor, maui]

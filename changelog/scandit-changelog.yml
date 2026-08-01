@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/ (Data Capture SDK release notes) + https://docs.scandit.com/docs/hosted/id-bolt/release-notes
+scheme: semver
+current_major: v7
+channels:
+  - name: Data Capture SDK
+    url: https://docs.scandit.com/
+    note: Per-platform release notes (iOS, Android, Web, React Native, Flutter, Cordova, Capacitor, .NET) published in the versioned docs.
+  - name: ID Bolt
+    url: https://docs.scandit.com/docs/hosted/id-bolt/release-notes
+entries: []
+note: >-
+  Scandit publishes dated, per-platform release notes inside its versioned
+  documentation rather than a single flat changelog feed. This pointer records the
+  changelog surface; specific dated entries live at the URLs above (the docs are the
+  source of truth). Not transcribed here to avoid staleness.

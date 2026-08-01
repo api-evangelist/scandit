@@ -1,0 +1,66 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/ + public package registries (npm, pub.dev, Maven Central, CocoaPods, NuGet)
+note: >-
+  Scandit ships its Smart Data Capture SDK as first-party client libraries per
+  platform/framework. Each product (Barcode/MatrixScan, ID, Smart Label, Parser,
+  Text) is a separate module; the -barcode/-core modules are listed as the
+  representative entrypoint per registry. License-key authenticated at runtime.
+packages:
+  - language: javascript
+    registry: npm
+    name: scandit-web-datacapture-barcode
+    url: https://www.npmjs.com/package/scandit-web-datacapture-barcode
+    install: npm install scandit-web-datacapture-barcode scandit-web-datacapture-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: scandit-web-datacapture-id
+    url: https://www.npmjs.com/package/scandit-web-datacapture-id
+    install: npm install scandit-web-datacapture-id scandit-web-datacapture-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@scandit/web-datacapture-barcode"
+    url: https://www.npmjs.com/package/@scandit/web-datacapture-barcode
+    install: npm install @scandit/web-datacapture-barcode @scandit/web-datacapture-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: scandit-react-native-datacapture-barcode
+    url: https://www.npmjs.com/package/scandit-react-native-datacapture-barcode
+    install: npm install scandit-react-native-datacapture-barcode scandit-react-native-datacapture-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: scandit-cordova-datacapture-barcode
+    url: https://www.npmjs.com/package/scandit-cordova-datacapture-barcode
+    install: cordova plugin add scandit-cordova-datacapture-barcode
+    official: true
+  - language: dart
+    registry: pub.dev
+    name: scandit_flutter_datacapture_barcode
+    url: https://pub.dev/packages/scandit_flutter_datacapture_barcode
+    install: flutter pub add scandit_flutter_datacapture_barcode scandit_flutter_datacapture_core
+    official: true
+  - language: java
+    registry: maven-central
+    name: com.scandit.datacapture:barcode
+    url: https://search.maven.org/search?q=g:com.scandit.datacapture
+    install: "implementation 'com.scandit.datacapture:barcode:+'"
+    official: true
+    note: "Android; group com.scandit.datacapture also ships core, id, label, parser, text, price-label modules"
+  - language: swift
+    registry: cocoapods
+    name: ScanditBarcodeCapture
+    url: https://cocoapods.org/pods/ScanditBarcodeCapture
+    install: "pod 'ScanditBarcodeCapture'"
+    official: true
+    note: "iOS; sibling pods ScanditCaptureCore, ScanditIdCapture, ScanditLabelCapture"
+  - language: csharp
+    registry: nuget
+    name: Scandit.DataCapture.Barcode
+    url: https://www.nuget.org/packages/Scandit.DataCapture.Barcode
+    install: dotnet add package Scandit.DataCapture.Barcode
+    official: true
+    note: ".NET MAUI / Xamarin"

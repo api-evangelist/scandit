@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.scandit.com/
+note: >-
+  Cross-cutting integration semantics for the Scandit Data Capture SDK. This is a
+  client-side, on-device SDK rather than a request/response REST API, so several
+  web-API conventions (pagination, request-id tracing, HTTP idempotency keys, rate
+  limiting) do not apply. Captured here are the conventions that DO govern
+  integration.
+authentication:
+  style: license-key
+  detail: Per-app license key supplied to the SDK at initialization; see authentication/scandit-authentication.yml
+architecture:
+  execution: on-device (edge)
+  data_capture_context: >-
+    All products are configured through a shared DataCaptureContext initialized
+    with the license key; a DataCaptureView renders the camera frames; modes
+    (BarcodeCapture, MatrixScan, IdCapture, LabelCapture) attach to the context.
+  privacy: >-
+    Barcode/text/ID recognition runs locally on the device; image data does not
+    leave the device for the core SDK (ID Bolt is the cloud-hosted exception).
+idempotency:
+  supported: false
+  note: On-device SDK; no server-side write operations, so no idempotency-key contract.
+pagination:
+  supported: false
+versioning:
+  scheme: semver
+  note: See lifecycle/scandit-lifecycle.yml; current major line is v7.
+error_model:
+  style: sdk-callbacks-and-status
+  note: >-
+    Errors surface as SDK exceptions / listener callbacks and license/status codes
+    rather than an HTTP problem+json envelope. License errors (expired, wrong
+    bundle id, product not enabled) are the most common integration failures.
+cross_links:
+  authentication: authentication/scandit-authentication.yml
+  lifecycle: lifecycle/scandit-lifecycle.yml
+  packages: packages/scandit-packages.yml

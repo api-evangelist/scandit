@@ -1,0 +1,50 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/scandit/skills
+install:
+  skills_cli: npx skills add scandit/skills
+  claude_code: "/plugin marketplace add scandit/skills  then  /plugin install scandit-sdk@scandit-plugins"
+note: >-
+  Scandit publishes first-party Agent Skills (Apache-2.0 / MIT) that teach coding
+  agents how to correctly integrate the Scandit Data Capture SDK across every
+  supported product and framework. 71 skills: one router (data-capture-sdk) plus
+  one implementation skill per product x framework. Two representative skills are
+  saved verbatim in this directory; the full catalog lives at the source repo.
+saved_verbatim:
+  - file: scandit-data-capture-sdk.md
+    name: data-capture-sdk
+    role: router / product-selection advisor
+  - file: scandit-id-bolt.md
+    name: id-bolt
+    role: hosted drop-in ID scanning (web)
+skills:
+  - name: data-capture-sdk
+    description: Advisor that recommends the right Scandit product for a use case and hands off to implementation skills.
+    frameworks: [all]
+  - name: sparkscan
+    description: SparkScan pre-built single-barcode scanning UI integration.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: barcode-capture
+    description: Low-level single-barcode capture integration.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: matrixscan-ar
+    description: MatrixScan AR — augmented-reality overlays/highlights/annotations on multiple barcodes.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: matrixscan-count
+    description: MatrixScan Count — high-speed multi-barcode counting workflow.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: matrixscan-batch
+    description: MatrixScan Batch — batch tracking of many barcodes across frames.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: matrixscan-pick
+    description: Guided picking workflow.
+    frameworks: [ios]
+  - name: label-capture
+    description: Smart Label Capture — OCR + barcode multi-field label extraction.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios]
+  - name: id-capture
+    description: Identity-document scanning embedded in your own UI.
+    frameworks: [android, ios, web, cordova, capacitor, flutter, rn, maui, net-android, net-ios, net-maui]
+  - name: id-bolt
+    description: Hosted, drop-in ID scanning pop-up for websites (@scandit/web-id-bolt).
+    frameworks: [web]
