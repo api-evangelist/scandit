@@ -51,7 +51,7 @@ tags:
 - Frontier Tech
 - Data Capture
 - Barcode Scanning
-- Computer-Vision
+- Computer Vision
 - SDK
 - ID Verification
 - Retail
@@ -68,6 +68,7 @@ tags_raw:
 - Retail
 - Logistics
 - Mobile
+- Computer-Vision
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
