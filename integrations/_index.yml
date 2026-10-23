@@ -162,3 +162,70 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
+- slug: scandit-pub-dev
+  label: pub.dev
+  partner: pub-dev
+  partner_name: pub.dev
+  category: official SDK (Dart/Flutter)
+  type: register
+  channel: package-registry
+  evidence: https://pub.dev/packages/scandit_flutter_datacapture_barcode
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: pub.dev (public registry JSON)
+    spec_file: null
+    language: Dart/Flutter
+    packages:
+    - name: scandit_flutter_datacapture_barcode
+      version: 8.6.1
+      released: '2026-10-01'
+      released_field: published
+      lapsed: false
+      page: https://pub.dev/packages/scandit_flutter_datacapture_barcode
+      repo_leg: not required (verified publisher)
+      publisher_leg: verified-publisher:scandit.com
+      matched_by: domain
+    - name: scandit_flutter_datacapture_core
+      version: 8.6.1
+      released: '2026-10-01'
+      released_field: published
+      lapsed: false
+      page: https://pub.dev/packages/scandit_flutter_datacapture_core
+      repo_leg: not required (verified publisher)
+      publisher_leg: verified-publisher:scandit.com
+      matched_by: domain
+    - name: scandit_flutter_datacapture_id
+      version: 8.6.1
+      released: '2026-10-01'
+      released_field: published
+      lapsed: false
+      page: https://pub.dev/packages/scandit_flutter_datacapture_id
+      repo_leg: not required (verified publisher)
+      publisher_leg: verified-publisher:scandit.com
+      matched_by: domain
+    - name: scandit_flutter_datacapture_parser
+      version: 8.6.1
+      released: '2026-10-01'
+      released_field: published
+      lapsed: false
+      page: https://pub.dev/packages/scandit_flutter_datacapture_parser
+      repo_leg: not required (verified publisher)
+      publisher_leg: verified-publisher:scandit.com
+      matched_by: domain
+    - name: scandit_flutter_datacapture_text
+      version: 6.28.9
+      released: '2026-04-02'
+      released_field: published
+      lapsed: false
+      page: https://pub.dev/packages/scandit_flutter_datacapture_text
+      repo_leg: not required (verified publisher)
+      publisher_leg: verified-publisher:scandit.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-php-dart-elixir-package-registries.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
