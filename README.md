@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Scandit is a company surfaced as a portfolio company of gv and added to the API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment pipeline.
+Scandit is the smart data capture company, founded in 2009 and headquartered in Zurich, Switzerland. Its vision-AI Smart Data Capture platform turns smartphones, handheld computers, wearables, drones and fixed cameras into high-performance scanners that read barcodes, text, IDs and objects with unmatched speed and accuracy. Scandit is delivered to developers as a first-party Data Capture SDK across iOS, Android, Web, React Native, Flutter, Cordova, Capacitor and .NET/MAUI, plus hosted products like ID Bolt for drop-in website ID scanning. Products include SparkScan, Barcode Capture, MatrixScan (AR/Count/Batch), Smart Label Capture and ID Capture. Authentication is a per-application license key, and recognition runs on-device at the edge. Customers include Walmart, Instacart, Levi Strauss & Co., Sephora, Lufthansa and FedEx.
 
-Backed by: gv — http://scandit.com
+**Areas:** Company · Frontier Tech · Data Capture · Barcode Scanning · Computer Vision · SDK · ID Verification · Retail · Logistics · Mobile
+
+## Scandit on APIs.io
+
+Everything profiled for Scandit is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/scandit/](https://apis.io/providers/scandit/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Scandit Data Capture SDK](https://apis.io/apis/scandit/scandit-data-capture-sdk/) — On-device Smart Data Capture SDK for barcode, MatrixScan, ID, Smart Label, Parser and Text capture, shipped as first-party client libraries for iOS,…
+- [Scandit ID Bolt](https://apis.io/apis/scandit/scandit-id-bolt/) — Cloud-hosted, drop-in identity-document scanning pop-up for websites with built-in phone handover, loaded via the @scandit/web-id-bolt package.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Scandit Authentication](https://apis.io/security/scandit/scandit-authentication/)
+- [Scandit Domain Security](https://apis.io/security/scandit/scandit-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.scandit.com/)
+- [Documentation](https://docs.scandit.com/)
+- [Getting started](https://docs.scandit.com/)
+- [API reference](https://docs.scandit.com/)
+- [Pricing](https://www.scandit.com/pricing/)
+- [Sign up](https://ssl.scandit.com/dashboard/sign-up)
+- [Support](https://support.scandit.com/hc/en-us)
+- [Blog](https://www.scandit.com/blog/)
+- [Privacy policy](https://www.scandit.com/privacy/)
+- [GitHub](https://github.com/Scandit)
+
+## API Evangelist rating
+
+**Kin Score 27.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 27.6 |
+
+**Agent readiness 6.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/scandit/](https://apis.io/providers/scandit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Scandit: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/scandit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
